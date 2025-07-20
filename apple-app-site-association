@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "92CKTQTGKD.com.lhy.SudokuGame.Clip", 
+        "paths": [ "/clip", "/clip/*" ]
+      }
+    ]
+  },
+  "appclips": {
+    "apps": [ "92CKTQTGKD.com.lhy.SudokuGame.Clip" ]
+  }
+}
