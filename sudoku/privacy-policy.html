@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐私政策 - 数独</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #f5f5f7;
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: white;
+      min-height: 100vh;
+    }
+    
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #1d1d1f;
+    }
+    
+    h2 {
+      font-size: 1.8em;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #1d1d1f;
+    }
+    
+    h3 {
+      font-size: 1.3em;
+      margin-top: 25px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    
+    p, li {
+      margin-bottom: 15px;
+      color: #666;
+      line-height: 1.8;
+    }
+    
+    ul {
+      padding-left: 30px;
+      margin-bottom: 20px;
+    }
+    
+    .update-date {
+      color: #999;
+      font-size: 0.9em;
+      margin-bottom: 30px;
+    }
+    
+    .contact {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 30px;
+    }
+    
+    .lang-switcher {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+      z-index: 1000;
+    }
+    
+    .lang-btn {
+      padding: 8px 16px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 0.9em;
+    }
+    
+    .lang-btn:hover {
+      background: #f0f0f0;
+    }
+    
+    .lang-btn.active {
+      background: #007AFF;
+      color: white;
+      border-color: #007AFF;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: #007AFF;
+      text-decoration: none;
+      font-size: 0.95em;
+    }
+    
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-switcher">
+    <button class="lang-btn active" onclick="switchLanguage('en')">English</button>
+    <button class="lang-btn" onclick="switchLanguage('ja')">日本語</button>
+    <button class="lang-btn" onclick="switchLanguage('zh')">中文</button>
+  </div>
+  
+  <div class="container">
+    <a href="/sudoku/" class="back-link" data-i18n="backToHome">← 返回首页</a>
+    
+    <h1 data-i18n="privacyTitle">隐私政策</h1>
+    <p class="update-date" data-i18n="lastUpdated">最后更新：2025年7月1日</p>
+    
+    <div class="content">
+      <section>
+        <h2 data-i18n="section1Title">1. 我们收集的信息</h2>
+        <ul>
+          <li data-i18n="collect1"><strong>游戏统计数据</strong>：游戏进度、分数、完成时间和成就，存储在设备本地</li>
+          <li data-i18n="collect2"><strong>游戏偏好设置</strong>：主题偏好、难度级别和触觉反馈选择等设置，保存在本地</li>
+          <li data-i18n="collect3"><strong>iCloud同步数据</strong>：如果启用，游戏数据将存储在您的个人iCloud账户中，以便跨设备同步</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2 data-i18n="section2Title">2. 我们如何使用您的信息</h2>
+        <ul>
+          <li data-i18n="use1">保存游戏进度并允许恢复游戏</li>
+          <li data-i18n="use2">跟踪成就并解锁新徽章</li>
+          <li data-i18n="use3">跨设备同步数据（启用iCloud时）</li>
+          <li data-i18n="use4">通过个性化统计改善游戏体验</li>
+          <li data-i18n="use5">不用于广告或营销目的</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2 data-i18n="section3Title">3. 数据存储和安全</h2>
+        <ul>
+          <li data-i18n="storage1"><strong>本地存储</strong>：所有游戏数据使用Core Data本地存储</li>
+          <li data-i18n="storage2"><strong>iCloud存储</strong>：启用时，数据安全存储在您的iCloud账户中</li>
+          <li data-i18n="storage3"><strong>无外部服务器</strong>：不运营或使用外部服务器</li>
+          <li data-i18n="storage4"><strong>加密</strong>：通过iCloud同步的数据由Apple的安全协议加密</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2 data-i18n="section4Title">4. 数据共享</h2>
+        <p data-i18n="sharing">我们不与第三方共享任何数据：</p>
+        <ul>
+          <li data-i18n="noAnalytics">无分析服务</li>
+          <li data-i18n="noAds">无广告网络</li>
+          <li data-i18n="noSocial">无社交媒体平台</li>
+          <li data-i18n="noBrokers">无数据经纪人</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2 data-i18n="section5Title">5. 您的权利和控制</h2>
+        <ul>
+          <li data-i18n="rights1"><strong>删除数据</strong>：使用设置中的"重置数据"选项</li>
+          <li data-i18n="rights2"><strong>禁用同步</strong>：随时关闭iCloud同步</li>
+          <li data-i18n="rights3"><strong>导出/备份</strong>：数据包含在设备的标准备份程序中</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2 data-i18n="section6Title">6. 儿童隐私</h2>
+        <ul>
+          <li data-i18n="children1">应用适合所有年龄段</li>
+          <li data-i18n="children2">不会有意收集儿童的个人信息</li>
+          <li data-i18n="children3">功能使用不需要个人信息</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2 data-i18n="section7Title">7. 政策变更</h2>
+        <ul>
+          <li data-i18n="changes1">更新可能会反映在应用的更新说明中</li>
+          <li data-i18n="changes2">更新后继续使用表示接受</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2 data-i18n="section8Title">8. 联系信息</h2>
+        <div class="contact">
+          <p data-i18n="contactEmail"><strong>电子邮箱</strong>：sudoku42game@gmail.com</p>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+  <script>
+    const translations = {
+      zh: {
+        backToHome: '← 返回首页',
+        privacyTitle: '隐私政策',
+        lastUpdated: '最后更新：2025年7月1日',
+        section1Title: '1. 我们收集的信息',
+        collect1: '<strong>游戏统计数据</strong>：游戏进度、分数、完成时间和成就，存储在设备本地',
+        collect2: '<strong>游戏偏好设置</strong>：主题偏好、难度级别和触觉反馈选择等设置，保存在本地',
+        collect3: '<strong>iCloud同步数据</strong>：如果启用，游戏数据将存储在您的个人iCloud账户中，以便跨设备同步',
+        section2Title: '2. 我们如何使用您的信息',
+        use1: '保存游戏进度并允许恢复游戏',
+        use2: '跟踪成就并解锁新徽章',
+        use3: '跨设备同步数据（启用iCloud时）',
+        use4: '通过个性化统计改善游戏体验',
+        use5: '不用于广告或营销目的',
+        section3Title: '3. 数据存储和安全',
+        storage1: '<strong>本地存储</strong>：所有游戏数据使用Core Data本地存储',
+        storage2: '<strong>iCloud存储</strong>：启用时，数据安全存储在您的iCloud账户中',
+        storage3: '<strong>无外部服务器</strong>：不运营或使用外部服务器',
+        storage4: '<strong>加密</strong>：通过iCloud同步的数据由Apple的安全协议加密',
+        section4Title: '4. 数据共享',
+        sharing: '我们不与第三方共享任何数据：',
+        noAnalytics: '无分析服务',
+        noAds: '无广告网络',
+        noSocial: '无社交媒体平台',
+        noBrokers: '无数据经纪人',
+        section5Title: '5. 您的权利和控制',
+        rights1: '<strong>删除数据</strong>：使用设置中的"重置数据"选项',
+        rights2: '<strong>禁用同步</strong>：随时关闭iCloud同步',
+        rights3: '<strong>导出/备份</strong>：数据包含在设备的标准备份程序中',
+        section6Title: '6. 儿童隐私',
+        children1: '应用适合所有年龄段',
+        children2: '不会有意收集儿童的个人信息',
+        children3: '功能使用不需要个人信息',
+        section7Title: '7. 政策变更',
+        changes1: '更新可能会反映在应用的更新说明中',
+        changes2: '更新后继续使用表示接受',
+        section8Title: '8. 联系信息',
+        contactEmail: '<strong>电子邮箱</strong>：sudoku42game@gmail.com'
+      },
+      en: {
+        backToHome: '← Back to Home',
+        privacyTitle: 'Privacy Policy',
+        lastUpdated: 'Last updated: July 1, 2025',
+        section1Title: '1. Information We Collect',
+        collect1: '<strong>Game Statistics</strong>: Game progress, scores, completion times, and achievements stored locally on device',
+        collect2: '<strong>Game Preferences</strong>: Settings such as theme preference, difficulty level, and haptic feedback choices saved locally',
+        collect3: '<strong>iCloud Sync Data</strong>: If enabled, game data stored in personal iCloud account to sync across devices',
+        section2Title: '2. How We Use Your Information',
+        use1: 'Save game progress and allow resume of games',
+        use2: 'Track achievements and unlock new badges',
+        use3: 'Synchronize data across devices (when iCloud is enabled)',
+        use4: 'Improve gaming experience with personalized statistics',
+        use5: 'No use for advertising or marketing purposes',
+        section3Title: '3. Data Storage and Security',
+        storage1: '<strong>Local Storage</strong>: All game data stored locally using Core Data',
+        storage2: '<strong>iCloud Storage</strong>: When enabled, data securely stored in iCloud account',
+        storage3: '<strong>No External Servers</strong>: No operation or use of external servers',
+        storage4: '<strong>Encryption</strong>: Data synced via iCloud encrypted by Apple\'s security protocols',
+        section4Title: '4. Data Sharing',
+        sharing: 'No data sharing with third parties:',
+        noAnalytics: 'No analytics services',
+        noAds: 'No advertising networks',
+        noSocial: 'No social media platforms',
+        noBrokers: 'No data brokers',
+        section5Title: '5. Your Rights and Control',
+        rights1: '<strong>Delete Data</strong>: Use "Reset Data" option in Settings',
+        rights2: '<strong>Disable Sync</strong>: Turn off iCloud sync anytime',
+        rights3: '<strong>Export/Backup</strong>: Data included in device\'s standard backup procedures',
+        section6Title: '6. Children\'s Privacy',
+        children1: 'App suitable for all ages',
+        children2: 'No knowingly collected personal information from children',
+        children3: 'No personal information required to function',
+        section7Title: '7. Changes to This Policy',
+        changes1: 'Updates may be reflected in app\'s update notes',
+        changes2: 'Continued use after updates indicates acceptance',
+        section8Title: '8. Contact Information',
+        contactEmail: '<strong>Email</strong>: sudoku42game@gmail.com'
+      },
+      ja: {
+        backToHome: '← ホームに戻る',
+        privacyTitle: 'プライバシーポリシー',
+        lastUpdated: '最終更新日：2025年7月1日',
+        section1Title: '1. 収集する情報',
+        collect1: '<strong>ゲーム統計データ</strong>：ゲームの進行状況、スコア、完了時間、実績をデバイスにローカル保存',
+        collect2: '<strong>ゲーム設定</strong>：テーマ設定、難易度レベル、触覚フィードバックの選択などをローカル保存',
+        collect3: '<strong>iCloud同期データ</strong>：有効にした場合、デバイス間で同期するため個人のiCloudアカウントにゲームデータを保存',
+        section2Title: '2. 情報の使用方法',
+        use1: 'ゲームの進行状況を保存し、ゲームの再開を可能にする',
+        use2: '実績を追跡し、新しいバッジをアンロックする',
+        use3: 'デバイス間でデータを同期する（iCloudが有効な場合）',
+        use4: 'パーソナライズされた統計でゲーム体験を向上させる',
+        use5: '広告やマーケティング目的での使用はしない',
+        section3Title: '3. データの保存とセキュリティ',
+        storage1: '<strong>ローカルストレージ</strong>：すべてのゲームデータはCore Dataを使用してローカルに保存',
+        storage2: '<strong>iCloudストレージ</strong>：有効時、データはiCloudアカウントに安全に保存',
+        storage3: '<strong>外部サーバーなし</strong>：外部サーバーの運用や使用はなし',
+        storage4: '<strong>暗号化</strong>：iCloud経由で同期されるデータはAppleのセキュリティプロトコルによって暗号化',
+        section4Title: '4. データ共有',
+        sharing: '第三者とのデータ共有はありません：',
+        noAnalytics: '分析サービスなし',
+        noAds: '広告ネットワークなし',
+        noSocial: 'ソーシャルメディアプラットフォームなし',
+        noBrokers: 'データブローカーなし',
+        section5Title: '5. あなたの権利とコントロール',
+        rights1: '<strong>データの削除</strong>：設定の「データをリセット」オプションを使用',
+        rights2: '<strong>同期の無効化</strong>：いつでもiCloud同期をオフにできる',
+        rights3: '<strong>エクスポート/バックアップ</strong>：データはデバイスの標準バックアップ手順に含まれる',
+        section6Title: '6. 子供のプライバシー',
+        children1: 'アプリは全年齢対象',
+        children2: '子供から個人情報を意図的に収集することはない',
+        children3: '機能の使用に個人情報は不要',
+        section7Title: '7. ポリシーの変更',
+        changes1: '更新はアプリのアップデートノートに反映される可能性がある',
+        changes2: '更新後の継続使用は承諾を示す',
+        section8Title: '8. お問い合わせ',
+        contactEmail: '<strong>メール</strong>：sudoku42game@gmail.com'
+      }
+    };
+    
+    function switchLanguage(lang) {
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      event.target.classList.add('active');
+      
+      document.documentElement.lang = lang === 'zh' ? 'zh-CN' : lang === 'ja' ? 'ja' : 'en';
+      
+      const t = translations[lang];
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (t[key]) {
+          element.innerHTML = t[key];
+        }
+      });
+    }
+    
+    window.addEventListener('DOMContentLoaded', () => {
+      switchLanguage('en');
+    });
+  </script>
+</body>
+</html>

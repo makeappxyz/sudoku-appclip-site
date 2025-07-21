@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>服务条款 - 数独</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #f5f5f7;
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: white;
+      min-height: 100vh;
+    }
+    
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #1d1d1f;
+    }
+    
+    h2 {
+      font-size: 1.8em;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #1d1d1f;
+    }
+    
+    h3 {
+      font-size: 1.3em;
+      margin-top: 25px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    
+    p, li {
+      margin-bottom: 15px;
+      color: #666;
+      line-height: 1.8;
+    }
+    
+    ul {
+      padding-left: 30px;
+      margin-bottom: 20px;
+    }
+    
+    .update-date {
+      color: #999;
+      font-size: 0.9em;
+      margin-bottom: 30px;
+    }
+    
+    .contact {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 30px;
+    }
+    
+    .lang-switcher {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+      z-index: 1000;
+    }
+    
+    .lang-btn {
+      padding: 8px 16px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 0.9em;
+    }
+    
+    .lang-btn:hover {
+      background: #f0f0f0;
+    }
+    
+    .lang-btn.active {
+      background: #007AFF;
+      color: white;
+      border-color: #007AFF;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: #007AFF;
+      text-decoration: none;
+      font-size: 0.95em;
+    }
+    
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    
+    .section-subtitle {
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-switcher">
+    <button class="lang-btn active" onclick="switchLanguage('en')">English</button>
+    <button class="lang-btn" onclick="switchLanguage('ja')">日本語</button>
+    <button class="lang-btn" onclick="switchLanguage('zh')">中文</button>
+  </div>
+  
+  <div class="container">
+    <a href="/sudoku/" class="back-link" data-i18n="backToHome">← 返回首页</a>
+    
+    <h1 data-i18n="termsTitle">服务条款</h1>
+    <p class="update-date" data-i18n="effectiveDate">生效日期：2025年7月1日</p>
+    
+    <div class="content">
+      <section>
+        <h2 data-i18n="section1Title">1. 接受条款</h2>
+        <p data-i18n="section1Content">下载、安装或使用数独游戏应用即表示您同意这些服务条款。</p>
+      </section>
+      
+      <section>
+        <h2 data-i18n="section2Title">2. 使用许可</h2>
+        <p class="section-subtitle" data-i18n="section2Allowed">您可以：</p>
+        <ul>
+          <li data-i18n="allowed1">在个人设备上下载和安装</li>
+          <li data-i18n="allowed2">使用所有功能进行个人娱乐</li>
+          <li data-i18n="allowed3">使用iCloud跨设备同步数据</li>
+        </ul>
+        
+        <p class="section-subtitle" data-i18n="section2NotAllowed">您不得：</p>
+        <ul>
+          <li data-i18n="notAllowed1">修改、逆向工程或反编译应用</li>
+          <li data-i18n="notAllowed2">用于商业目的</li>
+          <li data-i18n="notAllowed3">分发或重新发布应用</li>
+          <li data-i18n="notAllowed4">以违反适用法律的方式使用</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2 data-i18n="section3Title">3. 知识产权</h2>
+        <p data-i18n="section3Content">所有内容均归开发者/许可方所有，包括：</p>
+        <ul>
+          <li data-i18n="ip1">数独谜题算法</li>
+          <li data-i18n="ip2">用户界面设计和图形</li>
+          <li data-i18n="ip3">音效和动画</li>
+          <li data-i18n="ip4">代码和软件架构</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2 data-i18n="section4Title">4. 用户行为</h2>
+        <p data-i18n="section4Content">用户同意：</p>
+        <ul>
+          <li data-i18n="conduct1">不尝试作弊或操纵分数</li>
+          <li data-i18n="conduct2">不使用自动化工具游戏</li>
+          <li data-i18n="conduct3">不干扰其他用户的享受</li>
+          <li data-i18n="conduct4">不用于非法或有害目的</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2 data-i18n="section5Title">5. 数据和隐私</h2>
+        <ul>
+          <li data-i18n="privacy1">游戏数据本地存储在设备上</li>
+          <li data-i18n="privacy2">可选的iCloud同步</li>
+          <li data-i18n="privacy3">收集匿名崩溃报告（如果在设备设置中启用）</li>
+          <li data-i18n="privacy4">不收集个人信息或使用跟踪</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2 data-i18n="section6Title">6. 免责声明和限制</h2>
+        <ul>
+          <li data-i18n="disclaimer1"><strong>无保证</strong>：应用按"原样"提供，不提供任何保证</li>
+          <li data-i18n="disclaimer2"><strong>责任限制</strong>：对以下损害不承担责任：
+            <ul>
+              <li data-i18n="damage1">游戏进度或数据丢失</li>
+              <li data-i18n="damage2">设备兼容性问题</li>
+              <li data-i18n="damage3">间接或后果性损害</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2 data-i18n="section7Title">7. 更新和变更</h2>
+        <p data-i18n="section7Content">更新可能包括：</p>
+        <ul>
+          <li data-i18n="update1">新功能或游戏模式</li>
+          <li data-i18n="update2">错误修复和性能改进</li>
+          <li data-i18n="update3">条款变更</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2 data-i18n="section8Title">8. 终止</h2>
+        <ul>
+          <li data-i18n="termination1">条款在终止前有效</li>
+          <li data-i18n="termination2">违反条款可能导致访问终止</li>
+          <li data-i18n="termination3">终止后，必须停止使用并删除所有副本</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2 data-i18n="section9Title">9. 管辖法律</h2>
+        <ul>
+          <li data-i18n="law1">受用户所在司法管辖区法律管辖</li>
+          <li data-i18n="law2">通过约束性仲裁解决争议</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2 data-i18n="section10Title">10. 联系信息</h2>
+        <div class="contact">
+          <p data-i18n="contactEmail"><strong>电子邮箱</strong>：sudoku42game@gmail.com</p>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+  <script>
+    const translations = {
+      zh: {
+        backToHome: '← 返回首页',
+        termsTitle: '服务条款',
+        effectiveDate: '生效日期：2025年7月1日',
+        section1Title: '1. 接受条款',
+        section1Content: '下载、安装或使用数独游戏应用即表示您同意这些服务条款。',
+        section2Title: '2. 使用许可',
+        section2Allowed: '您可以：',
+        allowed1: '在个人设备上下载和安装',
+        allowed2: '使用所有功能进行个人娱乐',
+        allowed3: '使用iCloud跨设备同步数据',
+        section2NotAllowed: '您不得：',
+        notAllowed1: '修改、逆向工程或反编译应用',
+        notAllowed2: '用于商业目的',
+        notAllowed3: '分发或重新发布应用',
+        notAllowed4: '以违反适用法律的方式使用',
+        section3Title: '3. 知识产权',
+        section3Content: '所有内容均归开发者/许可方所有，包括：',
+        ip1: '数独谜题算法',
+        ip2: '用户界面设计和图形',
+        ip3: '音效和动画',
+        ip4: '代码和软件架构',
+        section4Title: '4. 用户行为',
+        section4Content: '用户同意：',
+        conduct1: '不尝试作弊或操纵分数',
+        conduct2: '不使用自动化工具游戏',
+        conduct3: '不干扰其他用户的享受',
+        conduct4: '不用于非法或有害目的',
+        section5Title: '5. 数据和隐私',
+        privacy1: '游戏数据本地存储在设备上',
+        privacy2: '可选的iCloud同步',
+        privacy3: '收集匿名崩溃报告（如果在设备设置中启用）',
+        privacy4: '不收集个人信息或使用跟踪',
+        section6Title: '6. 免责声明和限制',
+        disclaimer1: '<strong>无保证</strong>：应用按"原样"提供，不提供任何保证',
+        disclaimer2: '<strong>责任限制</strong>：对以下损害不承担责任：',
+        damage1: '游戏进度或数据丢失',
+        damage2: '设备兼容性问题',
+        damage3: '间接或后果性损害',
+        section7Title: '7. 更新和变更',
+        section7Content: '更新可能包括：',
+        update1: '新功能或游戏模式',
+        update2: '错误修复和性能改进',
+        update3: '条款变更',
+        section8Title: '8. 终止',
+        termination1: '条款在终止前有效',
+        termination2: '违反条款可能导致访问终止',
+        termination3: '终止后，必须停止使用并删除所有副本',
+        section9Title: '9. 管辖法律',
+        law1: '受用户所在司法管辖区法律管辖',
+        law2: '通过约束性仲裁解决争议',
+        section10Title: '10. 联系信息',
+        contactEmail: '<strong>电子邮箱</strong>：sudoku42game@gmail.com'
+      },
+      en: {
+        backToHome: '← Back to Home',
+        termsTitle: 'Terms of Service',
+        effectiveDate: 'Effective Date: July 1, 2025',
+        section1Title: '1. Acceptance of Terms',
+        section1Content: 'By downloading, installing, or using the Sudoku Game app, you agree to these Terms of Service.',
+        section2Title: '2. License to Use',
+        section2Allowed: 'You may:',
+        allowed1: 'Download and install on personal devices',
+        allowed2: 'Use all features for personal entertainment',
+        allowed3: 'Sync data across devices using iCloud',
+        section2NotAllowed: 'You may not:',
+        notAllowed1: 'Modify, reverse engineer, or decompile the app',
+        notAllowed2: 'Use for commercial purposes',
+        notAllowed3: 'Distribute or republish the app',
+        notAllowed4: 'Use in ways that violate applicable laws',
+        section3Title: '3. Intellectual Property',
+        section3Content: 'All content owned by developers/licensors including:',
+        ip1: 'Sudoku puzzle algorithms',
+        ip2: 'User interface design and graphics',
+        ip3: 'Sound effects and animations',
+        ip4: 'Code and software architecture',
+        section4Title: '4. User Conduct',
+        section4Content: 'Users agree to:',
+        conduct1: 'Not attempt to cheat or manipulate scores',
+        conduct2: 'Not use automated tools to play',
+        conduct3: 'Not interfere with other users\' enjoyment',
+        conduct4: 'Not use for illegal or harmful purposes',
+        section5Title: '5. Data and Privacy',
+        privacy1: 'Local storage of game data on device',
+        privacy2: 'Optional iCloud synchronization',
+        privacy3: 'Collection of anonymous crash reports (if enabled in device settings)',
+        privacy4: 'No collection of personal information or usage tracking',
+        section6Title: '6. Disclaimers and Limitations',
+        disclaimer1: '<strong>No Warranty</strong>: App provided "as is" without warranties',
+        disclaimer2: '<strong>Limitation of Liability</strong>: No liability for damages including:',
+        damage1: 'Loss of game progress or data',
+        damage2: 'Device compatibility issues',
+        damage3: 'Indirect or consequential damages',
+        section7Title: '7. Updates and Changes',
+        section7Content: 'Updates may include:',
+        update1: 'New features or game modes',
+        update2: 'Bug fixes and performance improvements',
+        update3: 'Changes to terms',
+        section8Title: '8. Termination',
+        termination1: 'Terms effective until terminated',
+        termination2: 'Access may be terminated for breach of terms',
+        termination3: 'Upon termination, must cease use and delete all copies',
+        section9Title: '9. Governing Law',
+        law1: 'Governed by laws of user\'s jurisdiction',
+        law2: 'Disputes resolved through binding arbitration',
+        section10Title: '10. Contact Information',
+        contactEmail: '<strong>Email</strong>: sudoku42game@gmail.com'
+      },
+      ja: {
+        backToHome: '← ホームに戻る',
+        termsTitle: '利用規約',
+        effectiveDate: '発効日：2025年7月1日',
+        section1Title: '1. 規約の承諾',
+        section1Content: '数独ゲームアプリをダウンロード、インストール、または使用することで、これらの利用規約に同意したものとみなされます。',
+        section2Title: '2. 使用許諾',
+        section2Allowed: '許可される行為：',
+        allowed1: '個人デバイスへのダウンロードとインストール',
+        allowed2: '個人的な娯楽のためのすべての機能の使用',
+        allowed3: 'iCloudを使用したデバイス間のデータ同期',
+        section2NotAllowed: '禁止される行為：',
+        notAllowed1: 'アプリの改変、リバースエンジニアリング、逆コンパイル',
+        notAllowed2: '商業目的での使用',
+        notAllowed3: 'アプリの配布または再公開',
+        notAllowed4: '適用法に違反する方法での使用',
+        section3Title: '3. 知的財産権',
+        section3Content: 'すべてのコンテンツは開発者/ライセンサーが所有します：',
+        ip1: '数独パズルアルゴリズム',
+        ip2: 'ユーザーインターフェースデザインとグラフィック',
+        ip3: '効果音とアニメーション',
+        ip4: 'コードとソフトウェアアーキテクチャ',
+        section4Title: '4. ユーザー行動',
+        section4Content: 'ユーザーは以下に同意します：',
+        conduct1: 'チートやスコアの操作を試みない',
+        conduct2: '自動化ツールを使用してプレイしない',
+        conduct3: '他のユーザーの楽しみを妨げない',
+        conduct4: '違法または有害な目的で使用しない',
+        section5Title: '5. データとプライバシー',
+        privacy1: 'ゲームデータのデバイスへのローカル保存',
+        privacy2: 'オプションのiCloud同期',
+        privacy3: '匿名のクラッシュレポートの収集（デバイス設定で有効の場合）',
+        privacy4: '個人情報や使用状況の追跡は行わない',
+        section6Title: '6. 免責事項と制限',
+        disclaimer1: '<strong>無保証</strong>：アプリは「現状のまま」提供され、保証はありません',
+        disclaimer2: '<strong>責任の制限</strong>：以下の損害に対する責任は負いません：',
+        damage1: 'ゲームの進行状況やデータの損失',
+        damage2: 'デバイスの互換性の問題',
+        damage3: '間接的または結果的損害',
+        section7Title: '7. 更新と変更',
+        section7Content: '更新には以下が含まれる場合があります：',
+        update1: '新機能やゲームモード',
+        update2: 'バグ修正とパフォーマンスの改善',
+        update3: '規約の変更',
+        section8Title: '8. 終了',
+        termination1: '規約は終了まで有効',
+        termination2: '規約違反によりアクセスが終了される場合がある',
+        termination3: '終了時は使用を中止し、すべてのコピーを削除する必要がある',
+        section9Title: '9. 準拠法',
+        law1: 'ユーザーの管轄区域の法律に準拠',
+        law2: '拘束力のある仲裁により紛争を解決',
+        section10Title: '10. お問い合わせ',
+        contactEmail: '<strong>メール</strong>：sudoku42game@gmail.com'
+      }
+    };
+    
+    function switchLanguage(lang) {
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      event.target.classList.add('active');
+      
+      document.documentElement.lang = lang === 'zh' ? 'zh-CN' : lang === 'ja' ? 'ja' : 'en';
+      
+      const t = translations[lang];
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (t[key]) {
+          element.innerHTML = t[key];
+        }
+      });
+    }
+    
+    window.addEventListener('DOMContentLoaded', () => {
+      switchLanguage('en');
+    });
+  </script>
+</body>
+</html>
